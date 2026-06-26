@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donor Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    
+    <h1 style="background-color:#b30000;
+               color:white;
+               text-align:center;
+               padding:20px;">
+        🩸 Donor Registration Form 🩸
+    </h1>
+    <center>
+    <form onsubmit="return validateForm()">
+        <h2>Personal Details</h2>
+        Full Name:<br>
+        <input type="text" id="name" placeholder="Enter Full Name">
+        <br><br>
+        Age:<br>
+        <input type="number" id="age" placeholder="Enter Age">
+        <br><br>
+        Gender:<br>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other
+        <br><br>
+        <h2>🩸 Blood Information</h2>
+        Blood Group:<br>
+        <select id="bloodGroup" >
+            <option>Select Blood Group</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>O+</option>
+            <option>O-</option>
+        </select>
+        <br><br>
+        <h2>📞 Contact Details</h2>
+        Mobile Number:<br>
+        <input type="tel" id="mobile" placeholder="Enter Mobile Number">
+        <br><br>
+        Email ID:<br>
+        <input type="email" placeholder="Enter Email">
+        <br><br>
+        <h2>📍 Address Details</h2>
+        State:<br>
+        <input type="text" placeholder="Enter State">
+        <br><br>
+
+        District:<br>
+        <input type="text" placeholder="Enter District">
+        <br><br>
+
+        City:<br>
+        <input type="text" id="city" placeholder="Enter City">
+        <br><br>
+
+        <h2>❤️ Donation Details</h2>
+
+        Weight (kg):<br>
+        <input type="number" placeholder="Enter Weight">
+        <br><br>
+
+        Last Blood Donation Date:<br>
+        <input type="date">
+        <br><br>
+
+        Availability Status:<br>
+        <select id="availability">
+            <option>Available</option>
+            <option>Not Available</option>
+        </select>
+        <br><br>
+
+        <button type="submit"
+                style="background-color:green;
+                color:white;
+                padding:10px 20px; ">
+            Register
+        </button>
+
+        <button type="reset"
+                style="background-color:orange;
+                color:white;
+                padding:10px 20px;">
+            Reset
+        </button>
+
+        <br><br>
+
+        <a href="index.html">
+            <button type="button"
+                    style="background-color:red;
+                    color:white;
+                    padding:10px 20px;">
+                Back to Home
+            </button>
+        </a>
+
+    </form>
+    </center>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+x <!DOCTYPE html>
+<html>
+<head>
+    <title>Search Blood Donor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadDonors()">
+    <h1 style="background-color:#b30000;
+               color:white;
+               text-align:center;
+               padding:20px;">
+        🩸 Search Blood Donor 🩸
+    </h1>
+    <center>
+    <h2>Find Donors</h2>
+    <form onsubmit="searchDonors(); return false;">
+        Blood Group:<br>
+        <select id="searchBloodGroup">
+            <option>Select Blood Group</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>O+</option>
+            <option>O-</option>
+        </select>
+        <br><br>
+        State:<br>
+        <input type="text" placeholder="Enter State">
+        <br><br>
+        District:<br>
+        <input type="text" placeholder="Enter District">
+        <br><br>
+        City:<br>
+        <input type="text" placeholder="Enter City">
+        <br>
+</select>
+<br><br>
+
+        <button type="submit"
+               onclick="searchDonors()">
+            Search
+        </button>
+    </form>
+    </center>
+    <hr>
+    <center>
+    <h2 style="color:#b30000;">Sample Search Result</h2>
+    <h3 id="donorCount"></h3>
+    <p id="noResult" style="color:red;
+    font-weight: bold;"></p>
+    <table border="1" cellpadding="10">
+        <thread>
+        <tr>
+            
+            <th>Name</th>
+            <th>Blood Group</th>
+            <th>Phone Number</th>
+            <th>City</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+        </thread>
+        <tbody id="donorTable">
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <a href="index.html">
+        <button style="background-color:red;
+                       color:white;
+                       padding:10px 20px;">
+            Back to Home
+        </button>
+    </a>
+    </center>
+<script src="script.js"></script>
+</body>
+</html>
